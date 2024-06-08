@@ -1,0 +1,186 @@
+*{
+    margin:0%;
+    padding :0%;
+}
+.main{
+    /* background-color: black; */
+    height: 742px;
+    width: 100vw;
+} 
+.main2{
+    display:block;
+    background-color: rgb(255, 250, 243);
+    border-radius: 5vh;
+    height: 400px;
+    width: 320px;
+    margin-top: 9vw;
+    margin-left: 35vw;
+}
+/*h1 edit*/
+h1{
+    font-size: 27px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h4{
+    margin-left: 18vh;
+    margin-bottom: 15px;
+}
+/* Styling the form container */
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    padding: 20px;
+}
+
+/* Styling the labels */
+.login label {
+    margin-bottom:px; 
+    font-weight: bold;
+    color: #333; 
+}
+
+/* Styling the inputs */
+input[type="text"]{
+    width: 73%;
+    height: 25px;
+    margin-left: 20px;
+    margin-bottom: 30px; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 15px; 
+    background-color: #cbcebd; 
+    transition: border-color 0.3s ease;
+}
+input[type="password"] {
+    width: 80%;
+    height: 45px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #cbcebd; 
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.password-container {
+    position: relative;
+}
+.eye-icon {
+    position: absolute;
+    right: 45px;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Change border color on focus */
+.login input[type="text"]:focus{
+    border-color: #ab2424; 
+    outline: none;   
+}
+.login input[type="password"]:focus {
+    border-color: #ab2424; 
+    outline: none;   
+}
+
+/* Styling the submit button */
+.login input[type="submit"] {
+    width: 80%;
+    height: 45px;
+    margin-left: 23px;
+    padding: 10px;
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #0d11df; 
+    border: none; 
+    border-radius: 14px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+/* Change background color on hover */
+.login input[type="submit"]:hover {
+    background-color: #3100e2;
+}
+/* Style for the horizontal line separator */
+hr.separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1em 0; 
+}
+/*google login*/
+.google {
+    height: 30px;
+    width: 50%;
+    margin-left:80px;
+    margin-bottom: 20px;
+    font-size: 16px; 
+    color:black; 
+    background-color:#cbcebd; 
+    border: none; 
+    border-radius: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+/*Apple login*/
+.apple {
+    margin-left: 80px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 50%;
+    font-size: 16px; 
+    color:white; 
+    background-color:#000000; 
+    border: none; 
+    border-radius: 14px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+/* Centering the form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+@media (max-width: 600px) {
+    .main{
+        /* background-color: white; */
+    }
+    .main2 {
+        margin-left: 6vh;
+        margin-top: 38vh;
+    }
+
+    .login h1 {
+        font-size: 20px;
+    }
+    h4{
+       font-size: 14px;
+       margin-left:12vh;
+    }
+
+    .login input[type="text"],
+    .login input[type="password"] {
+        padding: 8px;
+    }
+
+    .login input[type="submit"],
+    .google,
+    .apple {
+        padding: 0px;
+        font-size: 14px;
+    }
+
+    .eye-icon {
+        right: 45px;
+    }
+}
